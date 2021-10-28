@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Icon_Container" data-name="Icon Container" width="18" height="18" transform="translate(-0.04 0.5)" fill="#d3d3d3" stroke="#d3d3d3" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="rooms-icon" transform="translate(0.04 -0.5)" clip-path="url(#clip-path)">
+    <g id="bed-outline" transform="translate(1.44 3.6)">
+      <path id="Path_13" data-name="Path 13" d="M17.092,11.921H6.75V8.187A1.441,1.441,0,0,1,8.187,6.75h8.619a1.441,1.441,0,0,1,1.437,1.437v3.735Z" transform="translate(-5.026 -6.75)" fill="none" stroke="#d3d3d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_14" data-name="Path 14" d="M3.375,23.2V19.173a2.3,2.3,0,0,1,2.3-2.3H16.015a2.3,2.3,0,0,1,2.3,2.3V23.2" transform="translate(-3.375 -11.704)" fill="none" stroke="#d3d3d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_15" data-name="Path 15" d="M3.375,28.149v-.288A.864.864,0,0,1,4.237,27H17.452a.864.864,0,0,1,.862.862v.288" transform="translate(-3.375 -16.657)" fill="none" stroke="#d3d3d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_16" data-name="Path 16" d="M7.875,15.224v-.575A1.152,1.152,0,0,1,9.024,13.5H11.9a1.152,1.152,0,0,1,1.149,1.149v.575" transform="translate(-5.577 -10.053)" fill="none" stroke="#d3d3d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+      <path id="Path_17" data-name="Path 17" d="M18,15.224v-.575A1.152,1.152,0,0,1,19.149,13.5h2.873a1.152,1.152,0,0,1,1.149,1.149v.575" transform="translate(-10.531 -10.053)" fill="none" stroke="#d3d3d3" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
