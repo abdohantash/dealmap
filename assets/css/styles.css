@@ -26086,7 +26086,7 @@ li.mm-vertical.mm-opened>.mm-panel {
 }
 
 .mm-navbar {
-  border-bottom: 4px solid rgba(0,0,0,.1);
+  border-bottom: 4px solid rgba(0, 0, 0, .1);
   border-color: inherit;
   text-align: center;
   line-height: 30px;
@@ -28884,7 +28884,7 @@ a {
     -moz-transform: unset !important;
     -ms-transform: unset !important;
     -o-transform: unset !important;
-}
+  }
 
 }
 
@@ -28973,7 +28973,7 @@ a {
     -moz-transform: translate3d(-220px, 0, 0);
     -ms-transform: translate3d(-220px, 0, 0);
     -o-transform: translate3d(-220px, 0, 0);
-}
+  }
 
   .header-widget {
     margin-right: 7px;
@@ -29395,5 +29395,11 @@ a {
 
   .phone-mail button img {
     width: 20px;
+  }
+
+  .client-div .description h3 span {
+    display: block;
+    margin-left: 0 !important;
+    margin-bottom: 3px;
   }
 }
