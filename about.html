@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="عقارات للبيع وللايجار">
     <meta name="author" content="">
-    <title>DealMap ابحث عن عقارات للبيع وللايجار</title>
+    <title>ديل ماب ابحث عن عقارات للبيع وللايجار</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-svg-sm.svg">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
@@ -20,13 +20,14 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/aos2.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/js/lightgallery/css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="assets/js/steps/jquery-steps.min.css">
+    <link href="assets/js/filepond/filepond.css" rel="stylesheet" />
+    <link href="assets/js/filepond/filepond-plugin-image-preview.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -60,8 +61,9 @@
                                 <li><a href="real-estates.html">للبيع</a></li>
                                 <li><a href="real-estates.html">للايجار</a></li>
                                 <li><a href="real-estates.html">تجارية</a></li>
-                                <li><a href="real-estates.html">مشاريع جديدة</a></li>
-                                <li><a href="clients.html">قائمة عملائنا</a></li>
+                                <li><a href="auctions.html">المزادات</a></li>
+                                <li><a href="agents.html">وكلائنا</a></li>
+                                <li><a href="clients.html">قائمة الشركات</a></li>
                                 <li><a href="#">اعرف</a>
                                     <ul>
                                         <li><a href="#">
@@ -88,9 +90,10 @@
                                     </ul>
                                 </li>
                                 <li class="mobile-only">
-                                    <a href="#" class="button border add-ls hvr-shutter-out-horizontal">
-                                        أعلن معنا</a>
-                                    </li>
+                                    <a href="#" class="button border add-ls hvr-shutter-out-horizontal"
+                                        data-toggle="modal" data-target="#company">
+                                        تسجيل الشركات</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -111,7 +114,6 @@
 
 
                         <!-- تظهر عند عمل تسجيل دخول -->
-
                         <!-- <div class="header-user-menu user-menu add">
                             <div class="header-user-name">
                                 <span><img src="assets/images/testimonials/ts-1.jpg" alt=""></span>
@@ -127,8 +129,9 @@
                         </div> -->
 
                         <div class="header-widget add-prop">
-                            <a href="#" class="button border add-ls hvr-shutter-out-horizontal">
-                                أعلن معنا</a>
+                            <a href="#" class="button border add-ls hvr-shutter-out-horizontal" data-toggle="modal"
+                                data-target="#company">
+                                تسجيل الشركات</a>
                         </div>
                     </div>
                 </div>
@@ -140,7 +143,7 @@
         <section class="ui-element">
             <div class="container">
                 <div class="text-heading">
-                    <p><a href="index.html">DealMap </a> &nbsp;/&nbsp; <span>نبذه عنا</span></p>
+                    <p><a href="index.html">الرئيسية </a> &nbsp;/&nbsp; <span>نبذه عنا</span></p>
                 </div>
             </div>
         </section>
@@ -269,7 +272,7 @@
                                 <p><a href="terms-and-conditions.html">الشروط والاحكام</a></p>
                                 <p><a href="privacy-policy.html">سياسة الخصوصية</a></p>
                                 <p><a href="#" data-toggle="modal" datatarget="#exampleModal">دخول العميل</a></p>
-                                <p><a href="#">تسجيل الشركات</a></p>
+                                <p><a href="#" data-toggle="modal" datatarget="#company">تسجيل الشركات</a></p>
                             </div>
                             <p class="copyright">© 2021, DealMap. جميع الحقوق محفوظة</p>
                         </div>
@@ -299,8 +302,7 @@
     <!-- END PRELOADER -->
 
     <!-- Modal -->
-    <div class=" modal fade login-modal inner-pages" id="exampleModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class=" modal fade login-modal inner-pages" id="exampleModal">
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
 
@@ -436,6 +438,109 @@
         </div>
     </div>
 
+    <!-- Modal -->
+    <div class=" modal fade login-modal inner-pages" id="company">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="login">
+                    <div class="authentication__close-button" data-dismiss="modal" aria-label="Close">إغلاق</div>
+                    <form class="broker-form">
+                        <h3 class="text-header">للتسجيل :</h3>
+                        <ul>
+                            <li>
+                                <p>يجب أن تكون وسيط عقارات أو مطور</p>
+                            </li>
+                            <li>
+                                <p>يجب أن يكون لديك مكتب مسجل</p>
+                            </li>
+                        </ul>
+                        <p class="notes">يرجى التأكد من توفر المعايير المذكورة أعلاه</p>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>اسم الشركة المسجلة</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>رقم السجل التجاري</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <select class="form-control">
+                                    <option value="Broker">وسيط</option>
+                                    <option value="Developer">مطور</option>
+                                  </select>
+                                <span>نوع العميل</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <select class="form-control">
+                                    <option value="Al Behera">البحيره</option>
+                                    <option value="Al Daqahlya">الدقهلية</option>
+                                    <option value="Al Fayum">الفيوم</option>
+                                    <option value="Al Gharbeya">الغربية</option>
+                                    <option value="Al Mehallah">المحلة</option>
+                                    <option value="Al Minya">المنيا</option>
+                                    <option value="Al Monufia">المنوفية</option>
+                                    <option value="Alexandria">الاسكندرية</option>
+                                    <option value="Aswan">أسوان</option>
+                                    <option value="Asyut">أسيوط</option>
+                                    <option value="Beni Suef">بني سويف</option>
+                                    <option value="Cairo">القاهرة</option>
+                                    <option value="Damietta">دمياط</option>
+                                    <option value="El Esmailia">الاسماعيلية</option>
+                                    <option value="Giza">الجيزة</option>
+                                    <option value="Kafr El Sheikh">كفر الشيخ</option>
+                                    <option value="Luxor">الاقصر</option>
+                                    <option value="Matrouh">مطروح</option>
+                                    <option value="North Coast">الساحل الشمالي</option>
+                                    <option value="North Sinai">شمال سيناء</option>
+                                    <option value="Port Said">بور سعيد</option>
+                                    <option value="Qalyubia">القليوبية</option>
+                                    <option value="Qena">قنا</option>
+                                    <option value="Red Sea">البحر الاحمر</option>
+                                    <option value="Sharqia">الشرقية</option>
+                                    <option value="Sohag">سوهاج</option>
+                                    <option value="South Sainai">جنوب سيناء</option>
+                                    <option value="Suez">السويس</option></select>
+                                <span>المدينة</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>الاسم</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>اللقب</span>
+                            </div>
+                        </div>
+                        <div class="form-group mb-4">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>البريد الالكتروني</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="pos-relative">
+                                <input type="text" class="form-control" name="" id="">
+                                <span>الهاتف</span>
+                            </div>
+                        </div>
+                        <a href="#" class="btn_1 rounded full-width">سجل الآن</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 
@@ -454,7 +559,6 @@
     <script src="assets/js/fitvids.js"></script>
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <script src="assets/js/typed.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/imagesloaded.pkgd.min.js"></script>
     <script src="assets/js/isotope.pkgd.min.js"></script>
     <script src="assets/js/smooth-scroll.min.js"></script>
@@ -464,24 +568,18 @@
     <script src="assets/js/lightgallery/lightgallery.umd.js"></script>
     <script src="assets/js/lightgallery/lg-zoom.umd.js"></script>
     <script src="assets/js/lightgallery/lg-thumbnail.umd.js"></script>
-    <script src="assets/js/ajaxchimp.min.js"></script>
-    <script src="assets/js/newsletter.js"></script>
-    <script src="assets/js/jquery.form.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/forms-2.js"></script>
-    <script src="assets/js/color-switcher.js"></script>
     <script>
-        $(".dropdown-filter").on('click', function () {
+        $(".dropdown-filter").click(function () {
             $(".explore__form-checkbox-list").toggleClass("filter-block");
         });
 
-        $('.change-view-btn.grid').on('click', function () {
+        $('.change-view-btn.grid').click(function () {
             $('.change-view-btn.list').removeClass('active-view-btn');
             $(this).addClass('active-view-btn');
             $('.grid-home').removeClass('list').addClass('grid');
         });
 
-        $('.change-view-btn.list').on('click', function () {
+        $('.change-view-btn.list').click(function () {
             $('.change-view-btn.grid').removeClass('active-view-btn');
             $(this).addClass('active-view-btn');
             $('.grid-home').removeClass('grid').addClass('list');
@@ -523,39 +621,153 @@
         inlineGallery.openGallery();
     </script>
 
+    <script src="assets/js/yscountdown.js"></script>
     <script>
-        $('.slick-lancers').slick({
-            infinite: false,
-            rtl: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: false,
-            adaptiveHeight: true,
-            responsive: [{
-                breakpoint: 1292,
-                settings: {
-                    slidesToShow: 3,
-                    dots: true,
-                }
-            }, {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 2,
-                    dots: true,
-                }
-            }, {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true,
-                }
-            }]
+        var daysElement = document.querySelector("#days");
+        var hoursElement = document.querySelector("#hours");
+        var minutesElement = document.querySelector("#minutes");
+        var secondsElement = document.querySelector("#seconds");
+        var containerElement = document.querySelector(".container");
+        var endDate = "2021/11/14";
+
+        var myCountDown = new ysCountDown(endDate, function (remaining, finished) {
+
+            if (finished) {
+                containerElement.textContent = "Expired";
+            }
+
+            daysElement.textContent = remaining.totalDays;
+            hoursElement.textContent = remaining.hours;
+            minutesElement.textContent = remaining.minutes;
+            secondsElement.textContent = remaining.seconds;
+
         });
     </script>
 
-    <!-- MAIN JS -->
-    <script src="assets/js/script.js"></script>
+<script>
+    $(".checkbox-option").on("click", function () {
+        $(this).toggleClass("checked");
+        var a = $(this).find("input");
+        a.prop("checked") === !1 ? a.prop("checked", !0) : a.prop("checked", !1)
+    });
+</script>
+
+<script src="assets/js/steps/jquery-steps.min.js"></script>
+<script>
+    $('#demo-steps').steps({
+        onFinish: function () {
+            alert('complete');
+        }
+    });
+</script>
+
+<!-- MAIN JS -->
+<script src="assets/js/script.js"></script>
+
+<script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly&channel=2"
+    async></script>
+<script>
+    function initAutocomplete() {
+        const map = new google.maps.Map(document.getElementById("map"), {
+            center: {
+                lat: 23.674159041334946,
+                lng: 44.8876684341231
+            },
+            zoom: 6,
+            mapTypeId: "roadmap",
+        });
+        // Create the search box and link it to the UI element.
+        const input = document.getElementById("pac-input");
+        const searchBox = new google.maps.places.SearchBox(
+            input);
+
+        map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+            input);
+        // Bias the SearchBox results towards current map's viewport.
+        map.addListener("bounds_changed", () => {
+            searchBox.setBounds(map.getBounds());
+        });
+
+        let markers = [
+
+        ];
+
+        // Listen for the event fired when the user selects a prediction and retrieve
+        // more details for that place.
+        searchBox.addListener("places_changed", () => {
+            const places = searchBox.getPlaces();
+
+            if (places.length == 0) {
+                return;
+            }
+
+            // Clear out the old markers.
+            markers.forEach((marker) => {
+                marker.setMap(null);
+            });
+            markers = [];
+
+            // For each place, get the icon, name and location.
+            const bounds = new google.maps
+                .LatLngBounds();
+
+            places.forEach((place) => {
+                if (!place.geometry || !place
+                    .geometry.location) {
+                    console.log(
+                        "Returned place contains no geometry"
+                    );
+                    return;
+                }
+
+                // Create a marker for each place.
+                var icon = {
+                    url: 'assets/images/icons/location.svg'
+                };
+                markers.push(
+                    new google.maps.Marker({
+                        icon: icon,
+                        scale: "5",
+                        draggable: true,
+                        animation: google.maps.Animation.BOUNCE,
+                        map,
+                        title: place
+                            .name,
+                        position: place
+                            .geometry
+                            .location,
+                    })
+                );
+
+                if (place.geometry.viewport) {
+                    // Only geocodes have viewport.
+                    bounds.union(place.geometry
+                        .viewport);
+                } else {
+                    bounds.extend(place.geometry
+                        .location);
+                }
+            });
+            map.fitBounds(bounds);
+        });
+
+
+    }
+</script>
+
+
+<!-- include FilePond library -->
+<script src="assets/js/filepond/filepond.min.js"></script>
+<script src="assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
+<script src="assets/js/filepond/filepond.jquery.js"></script>
+
+<script>
+    FilePond.registerPlugin(FilePondPluginImagePreview);
+    $('.my-pond').filepond({
+        allowMultiple: true,
+    });
+</script>
 
 </body>
 

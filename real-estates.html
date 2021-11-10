@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="عقارات للبيع وللايجار">
     <meta name="author" content="">
-    <title>DealMap ابحث عن عقارات للبيع وللايجار</title>
+    <title>ديل ماب ابحث عن عقارات للبيع وللايجار</title>
     <!-- FAVICON -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo-svg-sm.svg">
     <link rel="stylesheet" href="assets/css/jquery-ui.css">
@@ -20,13 +20,14 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/aos2.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/lightcase.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/js/lightgallery/css/lightgallery-bundle.css">
+    <link rel="stylesheet" href="assets/js/steps/jquery-steps.min.css">
+    <link href="assets/js/filepond/filepond.css" rel="stylesheet" />
+    <link href="assets/js/filepond/filepond-plugin-image-preview.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -60,8 +61,9 @@
                                 <li><a href="real-estates.html">للبيع</a></li>
                                 <li><a href="real-estates.html">للايجار</a></li>
                                 <li><a href="real-estates.html">تجارية</a></li>
-                                <li><a href="real-estates.html">مشاريع جديدة</a></li>
-                                <li><a href="clients.html">قائمة عملائنا</a></li>
+                                <li><a href="auctions.html">المزادات</a></li>
+                                <li><a href="agents.html">وكلائنا</a></li>
+                                <li><a href="clients.html">قائمة الشركات</a></li>
                                 <li><a href="#">اعرف</a>
                                     <ul>
                                         <li><a href="#">
@@ -88,9 +90,10 @@
                                     </ul>
                                 </li>
                                 <li class="mobile-only">
-                                    <a href="#" class="button border add-ls hvr-shutter-out-horizontal">
-                                        أعلن معنا</a>
-                                    </li>
+                                    <a href="#" class="button border add-ls hvr-shutter-out-horizontal"
+                                        data-toggle="modal" data-target="#company">
+                                        تسجيل الشركات</a>
+                                </li>
                             </ul>
                         </nav>
                     </div>
@@ -111,7 +114,6 @@
 
 
                         <!-- تظهر عند عمل تسجيل دخول -->
-
                         <!-- <div class="header-user-menu user-menu add">
                             <div class="header-user-name">
                                 <span><img src="assets/images/testimonials/ts-1.jpg" alt=""></span>
@@ -127,8 +129,9 @@
                         </div> -->
 
                         <div class="header-widget add-prop">
-                            <a href="#" class="button border add-ls hvr-shutter-out-horizontal">
-                                أعلن معنا</a>
+                            <a href="#" class="button border add-ls hvr-shutter-out-horizontal" data-toggle="modal"
+                                data-target="#company">
+                                تسجيل الشركات</a>
                         </div>
                     </div>
                 </div>
@@ -982,361 +985,570 @@
             </div>
         </section>
 
-        <!-- START FOOTER -->
-        <footer>
-            <div class="footer-upper">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
-                                    <h3>الأكثر بحثاً</h3>
-                                    <p><a href="real-estates.html">شقق للبيع</a></p>
-                                    <p><a href="real-estates.html">شقق للايجار</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بالشروق</a></p>
-                                    <p><a href="real-estates.html">محلات للايجار بالاسكندرية</a></p>
-                                    <p><a href="real-estates.html">شاليهات للبيع</a></p>
-                                    <p><a href="real-estates.html">فلل للبيع</a></p>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
-                                    <h3>الأماكن الأكثر بحثاً</h3>
-                                    <p><a href="real-estates.html">شقق للبيع بالاسكندرية</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع في القاهرة</a></p>
-                                    <p><a href="real-estates.html">شقق للايجار بالاسكندرية</a></p>
-                                    <p><a href="real-estates.html">شقق للايجار في القاهرة</a></p>
-                                    <p><a href="real-estates.html">شاليهات للايجار بالساحل الشمالى</a></p>
-                                    <p><a href="real-estates.html">شاليهات للايجار بالعين السخنة</a></p>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
-                                    <h3>المناطق الأكثر شعبية</h3>
-                                    <p><a href="real-estates.html">شقق للبيع بالتجمع الخامس</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بمدينة نصر</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع 6 اكتوبر</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع في المعادي</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بحدائق الاهرام</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بالشيخ زايد</a></p>
-                                </div>
-                                <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
-                                    <h3>بحث العقارات التجارية</h3>
-                                    <p><a href="real-estates.html">محلات للايجار</a></p>
-                                    <p><a href="real-estates.html">اراضى للبيع</a></p>
-                                    <p><a href="real-estates.html">محلات للبيع</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بالهرم</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بالعبور</a></p>
-                                    <p><a href="real-estates.html">شقق للبيع بالمنصورة</a></p>
-                                </div>
+      <!-- START FOOTER -->
+      <footer>
+        <div class="footer-upper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
+                                <h3>الأكثر بحثاً</h3>
+                                <p><a href="real-estates.html">شقق للبيع</a></p>
+                                <p><a href="real-estates.html">شقق للايجار</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بالشروق</a></p>
+                                <p><a href="real-estates.html">محلات للايجار بالاسكندرية</a></p>
+                                <p><a href="real-estates.html">شاليهات للبيع</a></p>
+                                <p><a href="real-estates.html">فلل للبيع</a></p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
+                                <h3>الأماكن الأكثر بحثاً</h3>
+                                <p><a href="real-estates.html">شقق للبيع بالاسكندرية</a></p>
+                                <p><a href="real-estates.html">شقق للبيع في القاهرة</a></p>
+                                <p><a href="real-estates.html">شقق للايجار بالاسكندرية</a></p>
+                                <p><a href="real-estates.html">شقق للايجار في القاهرة</a></p>
+                                <p><a href="real-estates.html">شاليهات للايجار بالساحل الشمالى</a></p>
+                                <p><a href="real-estates.html">شاليهات للايجار بالعين السخنة</a></p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
+                                <h3>المناطق الأكثر شعبية</h3>
+                                <p><a href="real-estates.html">شقق للبيع بالتجمع الخامس</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بمدينة نصر</a></p>
+                                <p><a href="real-estates.html">شقق للبيع 6 اكتوبر</a></p>
+                                <p><a href="real-estates.html">شقق للبيع في المعادي</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بحدائق الاهرام</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بالشيخ زايد</a></p>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-xs-6 col-12 form-group">
+                                <h3>بحث العقارات التجارية</h3>
+                                <p><a href="real-estates.html">محلات للايجار</a></p>
+                                <p><a href="real-estates.html">اراضى للبيع</a></p>
+                                <p><a href="real-estates.html">محلات للبيع</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بالهرم</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بالعبور</a></p>
+                                <p><a href="real-estates.html">شقق للبيع بالمنصورة</a></p>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <a href="index.html" class="logo-footer">
-                                <img src="assets/images/logo-svg.svg" alt="" title="">
-                            </a>
-                            <ul class="netsocials">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="index.html" class="logo-footer">
+                            <img src="assets/images/logo-svg.svg" alt="" title="">
+                        </a>
+                        <ul class="netsocials">
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="footer-lower">
-                <div class="container container-header">
-                    <div class="row">
-                        <div class="col-md-9">
-                            <div class="list-btm">
-                                <p><a href="about.html">نبذه عنا</a></p>
-                                <p><a href="terms-and-conditions.html">الشروط والاحكام</a></p>
-                                <p><a href="privacy-policy.html">سياسة الخصوصية</a></p>
-                                <p><a href="#" data-toggle="modal" datatarget="#exampleModal">دخول العميل</a></p>
-                                <p><a href="#">تسجيل الشركات</a></p>
-                            </div>
-                            <p class="copyright">© 2021, DealMap. جميع الحقوق محفوظة</p>
-                        </div>
-                        <div class="col-md-3">
-                            <a href="#" class="store">
-                                <img src="assets/images/google-store.svg" alt="">
-                            </a>
-                        </div>
-
-
-
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-        <!-- <a data-scroll href="#wrapper" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a> -->
-    </div>
-    <!-- Wrapper / End -->
-
-    <!-- START PRELOADER -->
-    <div id="preloader">
-        <div id="status">
-            <div class="status-mes"></div>
         </div>
+        <div class="footer-lower">
+            <div class="container container-header">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="list-btm">
+                            <p><a href="about.html">نبذه عنا</a></p>
+                            <p><a href="terms-and-conditions.html">الشروط والاحكام</a></p>
+                            <p><a href="privacy-policy.html">سياسة الخصوصية</a></p>
+                            <p><a href="#" data-toggle="modal" datatarget="#exampleModal">دخول العميل</a></p>
+                            <p><a href="#" data-toggle="modal" datatarget="#company">تسجيل الشركات</a></p>
+                        </div>
+                        <p class="copyright">© 2021, DealMap. جميع الحقوق محفوظة</p>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="store">
+                            <img src="assets/images/google-store.svg" alt="">
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <a data-scroll href="#wrapper" class="go-up"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a> -->
+</div>
+<!-- Wrapper / End -->
+
+<!-- START PRELOADER -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
     </div>
-    <!-- END PRELOADER -->
+</div>
+<!-- END PRELOADER -->
 
-    <!-- Modal -->
-    <div class=" modal fade login-modal inner-pages" id="exampleModal" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
+<!-- Modal -->
+<div class=" modal fade login-modal inner-pages" id="exampleModal">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
 
-                <div class="login">
-                    <div class="authentication__close-button" data-dismiss="modal" aria-label="Close">إغلاق</div>
-                    <form class="login-form">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                            class="body__svg" style="display: none;">
-                            <defs>
-                                <g id="svg-facebook">
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Desktop-Log-In--" transform="translate(-190.000000, -198.000000)"
-                                            fill="#FEFEFE">
-                                            <g id="Connect-with-Facebook" transform="translate(166.000000, 186.000000)">
-                                                <g id="Group">
-                                                    <path
-                                                        d="M31.9328743,35 L27.6347873,35 L27.6347873,23.5309121 L24.7675854,23.5309121 L24.7675854,19.5782401 L27.6347873,19.5768961 L27.6301953,17.248481 C27.6301953,14.0238238 28.5045409,12.0618241 32.3028177,12.0618241 L35.4653137,12.0618241 L35.4653137,16.0151681 L33.4888657,16.0151681 C32.0096518,16.0151681 31.9385864,16.5675073 31.9385864,17.5984881 L31.9326503,19.5768961 L35.4874341,19.5768961 L35.0684897,23.529568 L31.9357303,23.5309121 L31.9328743,35 Z"
-                                                        id="Logo-Facebook"></path>
-                                                </g>
+            <div class="login">
+                <div class="authentication__close-button" data-dismiss="modal" aria-label="Close">إغلاق</div>
+                <form class="login-form">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        class="body__svg" style="display: none;">
+                        <defs>
+                            <g id="svg-facebook">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Desktop-Log-In--" transform="translate(-190.000000, -198.000000)"
+                                        fill="#FEFEFE">
+                                        <g id="Connect-with-Facebook" transform="translate(166.000000, 186.000000)">
+                                            <g id="Group">
+                                                <path
+                                                    d="M31.9328743,35 L27.6347873,35 L27.6347873,23.5309121 L24.7675854,23.5309121 L24.7675854,19.5782401 L27.6347873,19.5768961 L27.6301953,17.248481 C27.6301953,14.0238238 28.5045409,12.0618241 32.3028177,12.0618241 L35.4653137,12.0618241 L35.4653137,16.0151681 L33.4888657,16.0151681 C32.0096518,16.0151681 31.9385864,16.5675073 31.9385864,17.5984881 L31.9326503,19.5768961 L35.4874341,19.5768961 L35.0684897,23.529568 L31.9357303,23.5309121 L31.9328743,35 Z"
+                                                    id="Logo-Facebook"></path>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
-                                <g id="svg-googleplus">
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Desktop-Log-In--" transform="translate(-183.000000, -256.000000)">
-                                            <g id="logo_googleg_48dp" transform="translate(183.000000, 256.000000)">
-                                                <g id="Group-2-Copy">
-                                                    <path
-                                                        d="M21.56,11.25 C21.56,10.47 21.49,9.72 21.36,9 L11,9 L11,13.255 L16.92,13.255 C16.665,14.63 15.89,15.795 14.725,16.575 L14.725,19.335 L18.28,19.335 C20.36,17.42 21.56,14.6 21.56,11.25 L21.56,11.25 Z"
-                                                        id="Shape" fill="#4285F4"></path>
-                                                    <path
-                                                        d="M11,22 C13.97,22 16.46,21.015 18.28,19.335 L14.725,16.575 C13.74,17.235 12.48,17.625 11,17.625 C8.135,17.625 5.71,15.69 4.845,13.09 L1.17,13.09 L1.17,15.94 C2.98,19.535 6.7,22 11,22 L11,22 Z"
-                                                        id="Shape" fill="#34A853"></path>
-                                                    <path
-                                                        d="M4.845,13.09 C4.625,12.43 4.5,11.725 4.5,11 C4.5,10.275 4.625,9.57 4.845,8.91 L4.845,6.06 L1.17,6.06 C0.425,7.545 0,9.225 0,11 C0,12.775 0.425,14.455 1.17,15.94 L4.845,13.09 L4.845,13.09 Z"
-                                                        id="Shape" fill="#FBBC05"></path>
-                                                    <path
-                                                        d="M11,4.375 C12.615,4.375 14.065,4.93 15.205,6.02 L18.36,2.865 C16.455,1.09 13.965,0 11,0 C6.7,0 2.98,2.465 1.17,6.06 L4.845,8.91 C5.71,6.31 8.135,4.375 11,4.375 L11,4.375 Z"
-                                                        id="Shape" fill="#EA4335"></path>
-                                                </g>
+                            </g>
+                            <g id="svg-googleplus">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g id="Desktop-Log-In--" transform="translate(-183.000000, -256.000000)">
+                                        <g id="logo_googleg_48dp" transform="translate(183.000000, 256.000000)">
+                                            <g id="Group-2-Copy">
+                                                <path
+                                                    d="M21.56,11.25 C21.56,10.47 21.49,9.72 21.36,9 L11,9 L11,13.255 L16.92,13.255 C16.665,14.63 15.89,15.795 14.725,16.575 L14.725,19.335 L18.28,19.335 C20.36,17.42 21.56,14.6 21.56,11.25 L21.56,11.25 Z"
+                                                    id="Shape" fill="#4285F4"></path>
+                                                <path
+                                                    d="M11,22 C13.97,22 16.46,21.015 18.28,19.335 L14.725,16.575 C13.74,17.235 12.48,17.625 11,17.625 C8.135,17.625 5.71,15.69 4.845,13.09 L1.17,13.09 L1.17,15.94 C2.98,19.535 6.7,22 11,22 L11,22 Z"
+                                                    id="Shape" fill="#34A853"></path>
+                                                <path
+                                                    d="M4.845,13.09 C4.625,12.43 4.5,11.725 4.5,11 C4.5,10.275 4.625,9.57 4.845,8.91 L4.845,6.06 L1.17,6.06 C0.425,7.545 0,9.225 0,11 C0,12.775 0.425,14.455 1.17,15.94 L4.845,13.09 L4.845,13.09 Z"
+                                                    id="Shape" fill="#FBBC05"></path>
+                                                <path
+                                                    d="M11,4.375 C12.615,4.375 14.065,4.93 15.205,6.02 L18.36,2.865 C16.455,1.09 13.965,0 11,0 C6.7,0 2.98,2.465 1.17,6.06 L4.845,8.91 C5.71,6.31 8.135,4.375 11,4.375 L11,4.375 Z"
+                                                    id="Shape" fill="#EA4335"></path>
                                             </g>
                                         </g>
                                     </g>
                                 </g>
-                            </defs>
-                        </svg>
-                        <h3 class="text-header">تسجيل الدخول</h3>
-                        <div class="authentication__btn authentication__btn--facebook"><span class="svg">
-                                <svg viewBox="0 0 12 23" class="authentication__btn-icon authentication__btn-icon--fb">
-                                    <use xlink:href="#svg-facebook"></use>
-                                </svg>
-                            </span><span class="authentication__btn-txt authentication__btn-txt--fb">قم
-                                بتسجيل الدخول
-                                باستخدام الفيسبوك</span></div>
-                        <div class="authentication__btn authentication__btn--google"><span class="svg">
-                                <svg viewBox="0 0 22 22"
-                                    class="authentication__btn-icon authentication__btn-icon--google">
-                                    <use xlink:href="#svg-googleplus"></use>
-                                </svg>
-                            </span><span class="authentication__btn-txt">تسجيل الدخول مع Google</span></div>
-                        <div class="divider"><span>او</span></div>
-                        <div class="form-group mb-4">
-                            <div class="pos-relative">
-                                <input type="text" class="form-control" name="" id="">
-                                <span>اسم المستخدم</span>
-                            </div>
+                            </g>
+                        </defs>
+                    </svg>
+                    <h3 class="text-header">تسجيل الدخول</h3>
+                    <div class="authentication__btn authentication__btn--facebook"><span class="svg">
+                            <svg viewBox="0 0 12 23" class="authentication__btn-icon authentication__btn-icon--fb">
+                                <use xlink:href="#svg-facebook"></use>
+                            </svg>
+                        </span><span class="authentication__btn-txt authentication__btn-txt--fb">قم
+                            بتسجيل الدخول
+                            باستخدام الفيسبوك</span></div>
+                    <div class="authentication__btn authentication__btn--google"><span class="svg">
+                            <svg viewBox="0 0 22 22"
+                                class="authentication__btn-icon authentication__btn-icon--google">
+                                <use xlink:href="#svg-googleplus"></use>
+                            </svg>
+                        </span><span class="authentication__btn-txt">تسجيل الدخول مع Google</span></div>
+                    <div class="divider"><span>او</span></div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>اسم المستخدم</span>
+                        </div>
 
+                    </div>
+                    <div class="form-group">
+                        <div class="pos-relative">
+                            <input type="password" class="form-control" name="" id="" value="">
+                            <span>كلمة المرور</span>
                         </div>
-                        <div class="form-group">
-                            <div class="pos-relative">
-                                <input type="password" class="form-control" name="" id="" value="">
-                                <span>كلمة المرور</span>
+                    </div>
+                    <div class="fl-wrap filter-tags clearfix add_bottom_30">
+                        <div class="checkboxes float-right">
+                            <div class="filter-tags-wrap">
+                                <input id="check-b" type="checkbox" name="check">
+                                <label for="check-b">تذكرني</label>
                             </div>
                         </div>
-                        <div class="fl-wrap filter-tags clearfix add_bottom_30">
-                            <div class="checkboxes float-right">
-                                <div class="filter-tags-wrap">
-                                    <input id="check-b" type="checkbox" name="check">
-                                    <label for="check-b">تذكرني</label>
-                                </div>
-                            </div>
-                            <div class="float-left"><a id="forgot" href="javascript:void(0);">نسيت
-                                    كلمة المرور
-                                    ؟</a>
-                            </div>
+                        <div class="float-left"><a id="forgot" href="javascript:void(0);">نسيت
+                                كلمة المرور
+                                ؟</a>
                         </div>
-                        <a href="#" class="btn_1 rounded full-width">الدخول</a>
-                        <div class="text-center add_top_15">ليس لديك حساب ؟
-                            <strong><a href="javascript:;" class="show-register-form">انشاء حساب</a></strong></div>
-                    </form>
+                    </div>
+                    <a href="#" class="btn_1 rounded full-width">الدخول</a>
+                    <div class="text-center add_top_15">ليس لديك حساب ؟
+                        <strong><a href="javascript:;" class="show-register-form">انشاء حساب</a></strong></div>
+                </form>
 
-                    <form class="register-form">
-                        <h3 class="text-header">مستخدم جديد</h3>
-                        <div class="form-group mb-4">
-                            <div class="pos-relative">
-                                <input type="text" class="form-control" name="" id="">
-                                <span>الاسم</span>
-                            </div>
+                <form class="register-form">
+                    <h3 class="text-header">مستخدم جديد</h3>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>الاسم</span>
                         </div>
-                        <div class="form-group mb-4">
-                            <div class="pos-relative">
-                                <input type="email" class="form-control" name="" id="" value="">
-                                <span>البريد الالكتروني</span>
-                            </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="email" class="form-control" name="" id="" value="">
+                            <span>البريد الالكتروني</span>
                         </div>
-                        <div class="form-group">
-                            <div class="pos-relative">
-                                <input type="password" class="form-control" name="" id="" value="">
-                                <span>ادخل الرقم السري</span>
-                            </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="pos-relative">
+                            <input type="password" class="form-control" name="" id="" value="">
+                            <span>ادخل الرقم السري</span>
                         </div>
-                        <a href="#" class="btn_1 rounded full-width">اضف حسابك</a>
+                    </div>
+                    <a href="#" class="btn_1 rounded full-width">اضف حسابك</a>
 
-                        <div class="authentication__compliance-text">
-                            <div class="checkboxes">
-                                <div class="filter-tags-wrap">
-                                    <input id="check-a" type="checkbox" name="check">
-                                    <label for="check-a">
-                                        اوافق علي تطبيق <a href="#" target="_blank" class="">الشروط والاحكام</a>
-                                        ,
-                                        <a href="#" target="_blank" class="">سياسة الخصوصية</a>
+                    <div class="authentication__compliance-text">
+                        <div class="checkboxes">
+                            <div class="filter-tags-wrap">
+                                <input id="check-a" type="checkbox" name="check">
+                                <label for="check-a">
+                                    اوافق علي تطبيق <a href="#" target="_blank" class="">الشروط والاحكام</a>
+                                    ,
+                                    <a href="#" target="_blank" class="">سياسة الخصوصية</a>
 
-                                    </label>
-                                </div>
+                                </label>
                             </div>
                         </div>
-                        <div class="text-center add_top_15"> لديك حساب بالفعل ؟
-                            <strong><a href="javascript:;" class="show-login-form">سجل الدخول هنا</a></strong></div>
-                    </form>
-                </div>
+                    </div>
+                    <div class="text-center add_top_15"> لديك حساب بالفعل ؟
+                        <strong><a href="javascript:;" class="show-login-form">سجل الدخول هنا</a></strong></div>
+                </form>
             </div>
         </div>
     </div>
+</div>
+
+<!-- Modal -->
+<div class=" modal fade login-modal inner-pages" id="company">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="login">
+                <div class="authentication__close-button" data-dismiss="modal" aria-label="Close">إغلاق</div>
+                <form class="broker-form">
+                    <h3 class="text-header">للتسجيل :</h3>
+                    <ul>
+                        <li>
+                            <p>يجب أن تكون وسيط عقارات أو مطور</p>
+                        </li>
+                        <li>
+                            <p>يجب أن يكون لديك مكتب مسجل</p>
+                        </li>
+                    </ul>
+                    <p class="notes">يرجى التأكد من توفر المعايير المذكورة أعلاه</p>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>اسم الشركة المسجلة</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>رقم السجل التجاري</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <select class="form-control">
+                                <option value="Broker">وسيط</option>
+                                <option value="Developer">مطور</option>
+                              </select>
+                            <span>نوع العميل</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <select class="form-control">
+                                <option value="Al Behera">البحيره</option>
+                                <option value="Al Daqahlya">الدقهلية</option>
+                                <option value="Al Fayum">الفيوم</option>
+                                <option value="Al Gharbeya">الغربية</option>
+                                <option value="Al Mehallah">المحلة</option>
+                                <option value="Al Minya">المنيا</option>
+                                <option value="Al Monufia">المنوفية</option>
+                                <option value="Alexandria">الاسكندرية</option>
+                                <option value="Aswan">أسوان</option>
+                                <option value="Asyut">أسيوط</option>
+                                <option value="Beni Suef">بني سويف</option>
+                                <option value="Cairo">القاهرة</option>
+                                <option value="Damietta">دمياط</option>
+                                <option value="El Esmailia">الاسماعيلية</option>
+                                <option value="Giza">الجيزة</option>
+                                <option value="Kafr El Sheikh">كفر الشيخ</option>
+                                <option value="Luxor">الاقصر</option>
+                                <option value="Matrouh">مطروح</option>
+                                <option value="North Coast">الساحل الشمالي</option>
+                                <option value="North Sinai">شمال سيناء</option>
+                                <option value="Port Said">بور سعيد</option>
+                                <option value="Qalyubia">القليوبية</option>
+                                <option value="Qena">قنا</option>
+                                <option value="Red Sea">البحر الاحمر</option>
+                                <option value="Sharqia">الشرقية</option>
+                                <option value="Sohag">سوهاج</option>
+                                <option value="South Sainai">جنوب سيناء</option>
+                                <option value="Suez">السويس</option></select>
+                            <span>المدينة</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>الاسم</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>اللقب</span>
+                        </div>
+                    </div>
+                    <div class="form-group mb-4">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>البريد الالكتروني</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="pos-relative">
+                            <input type="text" class="form-control" name="" id="">
+                            <span>الهاتف</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_1 rounded full-width">سجل الآن</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
 
-    <!-- ARCHIVES JS -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/jquery-ui.js"></script>
-    <script src="assets/js/tether.min.js"></script>
-    <script src="assets/js/moment.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/mmenu.min.js"></script>
-    <script src="assets/js/mmenu.js"></script>
-    <script src="assets/js/aos.js"></script>
-    <script src="assets/js/aos2.js"></script>
-    <script src="assets/js/nice-select.js"></script>
-    <script src="assets/js/slick.min.js"></script>
-    <script src="assets/js/fitvids.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/typed.min.js"></script>
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
-    <script src="assets/js/smooth-scroll.min.js"></script>
-    <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/owl.carousel.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/lightgallery/lightgallery.umd.js"></script>
-    <script src="assets/js/lightgallery/lg-zoom.umd.js"></script>
-    <script src="assets/js/lightgallery/lg-thumbnail.umd.js"></script>
-    <script src="assets/js/ajaxchimp.min.js"></script>
-    <script src="assets/js/newsletter.js"></script>
-    <script src="assets/js/jquery.form.js"></script>
-    <script src="assets/js/jquery.validate.min.js"></script>
-    <script src="assets/js/forms-2.js"></script>
-    <script src="assets/js/color-switcher.js"></script>
-    <script>
-        $(".dropdown-filter").on('click', function () {
-            $(".explore__form-checkbox-list").toggleClass("filter-block");
+<!-- ARCHIVES JS -->
+<script src="assets/js/jquery-3.5.1.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/moment.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/mmenu.min.js"></script>
+<script src="assets/js/mmenu.js"></script>
+<script src="assets/js/aos.js"></script>
+<script src="assets/js/aos2.js"></script>
+<script src="assets/js/nice-select.js"></script>
+<script src="assets/js/slick.min.js"></script>
+<script src="assets/js/fitvids.js"></script>
+<script src="assets/js/jquery.waypoints.min.js"></script>
+<script src="assets/js/typed.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/smooth-scroll.min.js"></script>
+<script src="assets/js/lightcase.js"></script>
+<script src="assets/js/owl.carousel.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/lightgallery/lightgallery.umd.js"></script>
+<script src="assets/js/lightgallery/lg-zoom.umd.js"></script>
+<script src="assets/js/lightgallery/lg-thumbnail.umd.js"></script>
+<script>
+    $(".dropdown-filter").click(function () {
+        $(".explore__form-checkbox-list").toggleClass("filter-block");
+    });
+
+    $('.change-view-btn.grid').click(function () {
+        $('.change-view-btn.list').removeClass('active-view-btn');
+        $(this).addClass('active-view-btn');
+        $('.grid-home').removeClass('list').addClass('grid');
+    });
+
+    $('.change-view-btn.list').click(function () {
+        $('.change-view-btn.grid').removeClass('active-view-btn');
+        $(this).addClass('active-view-btn');
+        $('.grid-home').removeClass('grid').addClass('list');
+    });
+
+    $(".show-register-form").click(function (e) {
+        $(".login-form").hide();
+        $(".register-form").show();
+    });
+
+    $(".show-login-form").click(function (e) {
+        $(".register-form").hide();
+        $(".login-form").show();
+    });
+</script>
+<script>
+    const lgContainer = document.getElementById('inline-gallery-container');
+    const inlineGallery = lightGallery(lgContainer, {
+        container: lgContainer,
+        plugins: [lgZoom, lgThumbnail],
+        dynamic: true,
+        mode: 'lg-slide-vertical',
+        hash: false,
+        closable: false,
+        showMaximizeIcon: true,
+        appendSubHtmlTo: '.lg-item',
+        dynamicEl: [{
+                src: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg',
+                thumb: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg'
+            },
+            {
+                src: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg',
+                thumb: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg'
+            },
+        ]
+    });
+
+    // Since we are using dynamic mode, we need to programmatically open lightGallery
+    inlineGallery.openGallery();
+</script>
+
+<script src="assets/js/yscountdown.js"></script>
+<script>
+    var daysElement = document.querySelector("#days");
+    var hoursElement = document.querySelector("#hours");
+    var minutesElement = document.querySelector("#minutes");
+    var secondsElement = document.querySelector("#seconds");
+    var containerElement = document.querySelector(".container");
+    var endDate = "2021/11/14";
+
+    var myCountDown = new ysCountDown(endDate, function (remaining, finished) {
+
+        if (finished) {
+            containerElement.textContent = "Expired";
+        }
+
+        daysElement.textContent = remaining.totalDays;
+        hoursElement.textContent = remaining.hours;
+        minutesElement.textContent = remaining.minutes;
+        secondsElement.textContent = remaining.seconds;
+
+    });
+</script>
+
+<script>
+$(".checkbox-option").on("click", function () {
+    $(this).toggleClass("checked");
+    var a = $(this).find("input");
+    a.prop("checked") === !1 ? a.prop("checked", !0) : a.prop("checked", !1)
+});
+</script>
+
+<script src="assets/js/steps/jquery-steps.min.js"></script>
+<script>
+$('#demo-steps').steps({
+    onFinish: function () {
+        alert('complete');
+    }
+});
+</script>
+
+<!-- MAIN JS -->
+<script src="assets/js/script.js"></script>
+
+<script
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly&channel=2"
+async></script>
+<script>
+function initAutocomplete() {
+    const map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+            lat: 23.674159041334946,
+            lng: 44.8876684341231
+        },
+        zoom: 6,
+        mapTypeId: "roadmap",
+    });
+    // Create the search box and link it to the UI element.
+    const input = document.getElementById("pac-input");
+    const searchBox = new google.maps.places.SearchBox(
+        input);
+
+    map.controls[google.maps.ControlPosition.TOP_CENTER].push(
+        input);
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener("bounds_changed", () => {
+        searchBox.setBounds(map.getBounds());
+    });
+
+    let markers = [
+
+    ];
+
+    // Listen for the event fired when the user selects a prediction and retrieve
+    // more details for that place.
+    searchBox.addListener("places_changed", () => {
+        const places = searchBox.getPlaces();
+
+        if (places.length == 0) {
+            return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach((marker) => {
+            marker.setMap(null);
         });
+        markers = [];
 
-        $('.change-view-btn.grid').on('click', function () {
-            $('.change-view-btn.list').removeClass('active-view-btn');
-            $(this).addClass('active-view-btn');
-            $('.grid-home').removeClass('list').addClass('grid');
+        // For each place, get the icon, name and location.
+        const bounds = new google.maps
+            .LatLngBounds();
+
+        places.forEach((place) => {
+            if (!place.geometry || !place
+                .geometry.location) {
+                console.log(
+                    "Returned place contains no geometry"
+                );
+                return;
+            }
+
+            // Create a marker for each place.
+            var icon = {
+                url: 'assets/images/icons/location.svg'
+            };
+            markers.push(
+                new google.maps.Marker({
+                    icon: icon,
+                    scale: "5",
+                    draggable: true,
+                    animation: google.maps.Animation.BOUNCE,
+                    map,
+                    title: place
+                        .name,
+                    position: place
+                        .geometry
+                        .location,
+                })
+            );
+
+            if (place.geometry.viewport) {
+                // Only geocodes have viewport.
+                bounds.union(place.geometry
+                    .viewport);
+            } else {
+                bounds.extend(place.geometry
+                    .location);
+            }
         });
+        map.fitBounds(bounds);
+    });
 
-        $('.change-view-btn.list').on('click', function () {
-            $('.change-view-btn.grid').removeClass('active-view-btn');
-            $(this).addClass('active-view-btn');
-            $('.grid-home').removeClass('grid').addClass('list');
-        });
 
-        $(".show-register-form").click(function (e) {
-            $(".login-form").hide();
-            $(".register-form").show();
-        });
+}
+</script>
 
-        $(".show-login-form").click(function (e) {
-            $(".register-form").hide();
-            $(".login-form").show();
-        });
-    </script>
-    <script>
-        const lgContainer = document.getElementById('inline-gallery-container');
-        const inlineGallery = lightGallery(lgContainer, {
-            container: lgContainer,
-            plugins: [lgZoom, lgThumbnail],
-            dynamic: true,
-            mode: 'lg-slide-vertical',
-            hash: false,
-            closable: false,
-            showMaximizeIcon: true,
-            appendSubHtmlTo: '.lg-item',
-            dynamicEl: [{
-                    src: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg',
-                    thumb: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg'
-                },
-                {
-                    src: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg',
-                    thumb: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg'
-                },
-            ]
-        });
 
-        // Since we are using dynamic mode, we need to programmatically open lightGallery
-        inlineGallery.openGallery();
-    </script>
+<!-- include FilePond library -->
+<script src="assets/js/filepond/filepond.min.js"></script>
+<script src="assets/js/filepond/filepond-plugin-image-preview.min.js"></script>
+<script src="assets/js/filepond/filepond.jquery.js"></script>
 
-    <script>
-        $('.slick-lancers').slick({
-            infinite: false,
-            rtl: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: false,
-            adaptiveHeight: true,
-            responsive: [{
-                breakpoint: 1292,
-                settings: {
-                    slidesToShow: 3,
-                    dots: true,
-                }
-            }, {
-                breakpoint: 993,
-                settings: {
-                    slidesToShow: 2,
-                    dots: true,
-                }
-            }, {
-                breakpoint: 769,
-                settings: {
-                    slidesToShow: 1,
-                    dots: true,
-                }
-            }]
-        });
-    </script>
-
-    <!-- MAIN JS -->
-    <script src="assets/js/script.js"></script>
+<script>
+FilePond.registerPlugin(FilePondPluginImagePreview);
+$('.my-pond').filepond({
+    allowMultiple: true,
+});
+</script>
 
 </body>
 
