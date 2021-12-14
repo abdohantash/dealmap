@@ -28762,6 +28762,51 @@ color: #333;
 height: 40px;
 }
 
+.slick-ads {
+  direction: ltr;
+}
+
+.slick-ads a {
+  width: 100%;
+  height: 100%;
+}
+
+.slick-ads img {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.slick-ads .slick-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  display: none !important;
+  background: #0000004f;
+  padding: 1px 5px 4px;
+  border-radius: 60px;
+  line-height: 0px;
+  width: max-content;
+  margin: auto;
+}
+
+.slick-ads:hover .slick-dots {
+display: block !important;
+}
+
+.slick-ads .slick-dots li {
+  box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+.slick-ads .slick-dots li.slick-active{
+  box-shadow: inset 0 0 0 6px #ffffff
+}
+
+.slick-ads .slick-dots li:after {
+  background-color: #ffffff;
+}
+
 /* responsive abdo */
 
 @media (max-width: 1400px) {
