@@ -271,7 +271,7 @@ jQuery(document).on('ready', function ($) {
         }
     });
     $(".slider_amount").val("Price Range: $" + $(".slider-range").slider("values", 0).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,") + " - $" + $(".slider-range").slider("values", 1).toString().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
-    
+
     /*----------------------------------
     //------ MODAL ------//
     -----------------------------------*/
@@ -288,7 +288,7 @@ jQuery(document).on('ready', function ($) {
     $('.close-reg').on("click", function () {
         modal.hide();
     });
-    
+
     /*----------------------------------
     //------ TABS ------//
     -----------------------------------*/
@@ -299,6 +299,20 @@ jQuery(document).on('ready', function ($) {
         var b = $(this).attr("href");
         $(".tab-contents").not(b).css("display", "none");
         $(b).fadeIn();
+    });
+
+    // slick
+    $('.slick-ads').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        fade: true,
+        cssEase: 'linear',
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1
     });
 
 }(jQuery));
