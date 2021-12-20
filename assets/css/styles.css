@@ -157,7 +157,7 @@ img {
   padding: 10px 0;
   background: #fbfbfc !important;
   box-shadow: 0 15px 0 rgb(255 255 255 / 20%);
-  z-index: 9;
+  z-index: 99;
 }
 
 .header-top.head-tr {
@@ -28871,6 +28871,26 @@ margin-top: 35px;
   height: calc(100vh - 71px) !important;
   max-height: unset !important;
 
+}
+
+.img-slider {
+  display: none;
+}
+
+.lg-backdrop,.lg-outer .lg-thumb-outer {
+  background-color: #fff;
+}
+.lg-next, .lg-prev {
+  background-color: rgb(0 113 188);
+  color: #fff;
+}
+
+.lg-toolbar .lg-icon:hover {
+  color: #0071bc;
+}
+
+.lg-toolbar {
+  background: #ffffffde;
 }
 
 
