@@ -217,7 +217,14 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-8 col-md-12 blog-pots">
-                            <div id="inline-gallery-container" class="inline-gallery-container"></div>
+                            <div id="inline-gallery-container" class="inline-gallery-container">
+                                    <div class="img-slider" data-src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg">
+                                        <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg" alt="">
+                                    </div>
+                                    <div class="img-slider" data-src="https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg">
+                                        <img src="https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg" alt="">
+                                    </div>
+                            </div>
                             <div class="propert-details">
                                 <h5><img class="svg" src="assets/images/icons/pin-icon.svg" alt="">
                                     كيروفستيفال القاهرة الجديدة
@@ -328,7 +335,7 @@
                             </div>
                         </div>
                         <aside class="col-lg-4 col-md-12 car">
-                            <div class="single widget sticky-div">
+                            <div class="single widget">
                                 <div class="contact-div">
                                     <h3 class="price-prop">100,000 ر.س</h3>
                                     <div class="phone-mail">
@@ -344,6 +351,18 @@
                                             <img src="assets/images/icons/email.png" alt="">
                                             البريد الالكتروني
                                         </button>
+                                    </div>
+                                    <div class="line">
+                                        <h3>ارسال عرض</h3>
+                                    </div>
+                                    <div class="agent-contact-form-sidebar border-0 pt-0">
+                                        <form name="contact_form" method="post" action="">
+                                            <input type="text" id="" name="" placeholder="اسمك" required="">
+                                            <input type="email" id="" name="" placeholder="بريدك الالكتروني" required="">
+                                            <input type="number" id="" name="" placeholder="رقم الهاتف" required="">
+                                            <input type="number" id="" name="" placeholder="العرض المقدم" required="">
+                                            <input type="submit" name="" class="multiple-send-message hvr-shutter-out-horizontal" value="أرسل">
+                                        </form>
                                     </div>
                                 </div>
                                 <a href="#" class="report">
@@ -927,21 +946,11 @@
     const inlineGallery = lightGallery(lgContainer, {
         container: lgContainer,
         plugins: [lgZoom, lgThumbnail],
-        dynamic: true,
         mode: 'lg-slide-vertical',
         hash: false,
         closable: false,
         showMaximizeIcon: true,
-        appendSubHtmlTo: '.lg-item',
-        dynamicEl: [{
-                src: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg',
-                thumb: 'https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/11/hfpqyV7B-IMG-Dubai-UAE-1200x800.jpg'
-            },
-            {
-                src: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg',
-                thumb: 'https://global-uploads.webflow.com/5ef5480befd392489dacf544/5f9f5e5943de7e69a1339242_5f44a7398c0cdf460857e744_img-image.jpeg'
-            },
-        ]
+        selector: '.img-slider',
     });
 
     // Since we are using dynamic mode, we need to programmatically open lightGallery
