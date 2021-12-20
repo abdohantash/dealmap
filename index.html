@@ -29,6 +29,11 @@
     <link href="assets/js/filepond/filepond.css" rel="stylesheet" />
     <link href="assets/js/filepond/filepond-plugin-image-preview.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- new slider -->
+    <link href="assets/js/revolution/css/settings.css" rel="stylesheet" type="text/css" />
+    <link href="assets/js/revolution/css/layers.css" rel="stylesheet" type="text/css" />
+    <link href="assets/js/revolution/css/navigation.css" rel="stylesheet" type="text/css" />
+    <!--  -->
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
@@ -141,85 +146,105 @@
 
         </header>
         <!-- Header Container / End -->
-
-        <!-- STAR HEADER IMAGE -->
-        <section class="header-image home-18 d-flex align-items-center" id="slider">
-            <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-12" data-aos="fade-down">
-                        <div class="left wow fadeInDown">
-                            <h1>ابحث عن عقارك الجديد</h1>
-                            <p>مع اكثر من 10000 عقار حول انحاء الجمهورية</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-12 google-maps home-18" data-aos="fade-up">
-                        <div class="filter">
-                            <div class="filter-toggle d-lg-none d-sm-flex"><i class="fa fa-search"></i>
-                                <h6>ابحث عن عقارك</h6>
+        <!-- Slider -->
+        <div class="header-image home-18 d-flex align-items-center">
+            <div id="rev_slider_home_wrapper" class="rev_slider_wrapper fullwidthbanner-container"
+                data-alias="news-gallery34">
+                <div id="rev_slider_home" class="rev_slider fullwidthabanner" data-version="5.0.7">
+                    <ul>
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-1" data-transition="fade">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/bg/1.jpg" alt="" data-bgposition="top" data-bgfit="cover"
+                                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        </li>
+                        <!-- SLIDE 1 -->
+                        <li data-index="rs-2" data-transition="fade">
+                            <!-- MAIN IMAGE -->
+                            <img src="assets/images/bg/2.jpg" alt="" data-bgposition="top" data-bgfit="cover"
+                                data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="abs-div">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-lg-12" data-aos="fade-down">
+                            <div class="left wow fadeInDown">
+                                <h1>ابحث عن عقارك الجديد</h1>
+                                <p>مع اكثر من 10000 عقار حول انحاء الجمهورية</p>
                             </div>
-                            <form method="get">
-                                <div class="filter-item">
-                                    <label>المدينة أو البلدة أو الحي</label>
-                                    <div class="search-div">
-                                        <input type="text" placeholder="القاهرة">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-
+                        </div>
+                        <div class="col-lg-12 google-maps home-18" data-aos="fade-up">
+                            <div class="filter">
+                                <div class="filter-toggle d-lg-none d-sm-flex"><i class="fa fa-search"></i>
+                                    <h6>ابحث عن عقارك</h6>
                                 </div>
-                                <div class="grid-1">
+                                <form method="get">
                                     <div class="filter-item">
-                                        <label>نوع العقار</label>
-                                        <select name="property-status">
-                                            <option value="">شقق</option>
-                                            <option value="">شقق مفروشة</option>
-                                            <option value="">شاليهات</option>
-                                            <option value="">فلل</option>
-                                            <option value="">أراضي</option>
-                                            <option value="">مباني</option>
-                                            <option value="">إداري</option>
-                                            <option value="">تجاري</option>
-                                            <option value="">طبي</option>
-                                            <option value="">غرف مشاركة</option>
-                                            <option value="">عقارات أخرى</option>
-                                        </select>
+                                        <label>المدينة أو البلدة أو الحي</label>
+                                        <div class="search-div">
+                                            <input type="text" placeholder="القاهرة">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+    
+                                    </div>
+                                    <div class="grid-1">
+                                        <div class="filter-item">
+                                            <label>نوع العقار</label>
+                                            <select name="property-status">
+                                                <option value="">شقق</option>
+                                                <option value="">شقق مفروشة</option>
+                                                <option value="">شاليهات</option>
+                                                <option value="">فلل</option>
+                                                <option value="">أراضي</option>
+                                                <option value="">مباني</option>
+                                                <option value="">إداري</option>
+                                                <option value="">تجاري</option>
+                                                <option value="">طبي</option>
+                                                <option value="">غرف مشاركة</option>
+                                                <option value="">عقارات أخرى</option>
+                                            </select>
+                                        </div>
+                                        <div class="filter-item">
+                                            <label>القسم</label>
+                                            <select name="property-type">
+                                                <option value="">للبيع</option>
+                                                <option value="">للايجار</option>
+                                            </select>
+                                        </div>
+    
+                                    </div>
+                                    <div class="grid-1 grid-mob">
+                                        <div class="filter-item">
+                                            <label>السعر</label>
+                                            <input type="number" name="" class="area-filter filter-1"
+                                                placeholder="السعر من" />
+                                            <input type="number" name="" class="area-filter" placeholder="السعر الي" />
+                                            <div class="clear"></div>
+                                        </div>
+                                        <div class="filter-item">
+                                            <label>المساحة</label>
+                                            <input type="number" name="areaMin" class="area-filter filter-1 mb-0"
+                                                placeholder="من (متر²)" />
+                                            <input type="number" name="areaMax" class="area-filter mb-0"
+                                                placeholder="الي (متر²)" />
+                                            <div class="clear"></div>
+                                        </div>
                                     </div>
                                     <div class="filter-item">
-                                        <label>القسم</label>
-                                        <select name="property-type">
-                                            <option value="">للبيع</option>
-                                            <option value="">للايجار</option>
-                                        </select>
+                                        <button type="button"
+                                            class="button hvr-shutter-out-horizontal alt mb-0">ابحث</button>
                                     </div>
-
-                                </div>
-                                <div class="grid-1 grid-mob">
-                                    <div class="filter-item">
-                                        <label>السعر</label>
-                                        <input type="number" name="" class="area-filter filter-1"
-                                            placeholder="السعر من" />
-                                        <input type="number" name="" class="area-filter" placeholder="السعر الي" />
-                                        <div class="clear"></div>
-                                    </div>
-                                    <div class="filter-item">
-                                        <label>المساحة</label>
-                                        <input type="number" name="areaMin" class="area-filter filter-1 mb-0"
-                                            placeholder="من (متر²)" />
-                                        <input type="number" name="areaMax" class="area-filter mb-0"
-                                            placeholder="الي (متر²)" />
-                                        <div class="clear"></div>
-                                    </div>
-                                </div>
-                                <div class="filter-item">
-                                    <button type="button"
-                                        class="button hvr-shutter-out-horizontal alt mb-0">ابحث</button>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- END HEADER IMAGE -->
+            
+        </div>
 
         <section class="btm-slider">
             <div class="container">
@@ -1341,6 +1366,112 @@
     FilePond.registerPlugin(FilePondPluginImagePreview);
     $('.my-pond').filepond({
         allowMultiple: true,
+    });
+</script>
+
+
+
+<!-- new slider -->
+<!-- Slider Revolution scripts -->
+<script src="assets/js/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="assets/js/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="assets/js/revolution/js/extensions/revolution.extension.video.min.js"></script>
+
+<script>
+    var tpj = jQuery;
+    var revapi34;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_home").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_home");
+        } else {
+            revapi34 = tpj("#rev_slider_home").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "assets/js/revolution/js/",
+                sliderLayout: "fullwidth",
+                dottedOverlay: "none",
+                delay: 6700,
+                navigation: {
+                    keyboardNavigation: "on",
+                    keyboard_direction: "horizontal",
+                    mouseScrollNavigation: "off",
+                    onHoverStop: "on",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "zeus",
+                        enable: false,
+                        hide_onmobile: true,
+                        hide_under: 600,
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 30,
+                            v_offset: 0
+                        }
+                    },
+                    bullets: {
+                        enable: false,
+                        hide_onmobile: true,
+                        hide_under: 600,
+                        style: "hesperiden",
+                        hide_onleave: true,
+                        hide_delay: 200,
+                        hide_delay_mobile: 1200,
+                        direction: "vertical",
+                        h_align: "right",
+                        v_align: "center",
+                        h_offset: 40,
+                        v_offset: 0,
+                        space: 5
+                    }
+                },
+                viewPort: {
+                    enable: true,
+                    outof: "pause",
+                    visible_area: "80%"
+                },
+                shadow: 0,
+                spinner: "off",
+                stopLoop: 'off',
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
     });
 </script>
 
