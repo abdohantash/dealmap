@@ -29837,7 +29837,7 @@ margin-top: 35px;
     font-size: 14px;
   }
   .rev_slider_wrapper, .rev_slider, .slotholder, .tp-revslider-slidesli, .tp-revslider-mainul, .tp-fullwidth-forcer, .rev_slider .tp-bgimg.defaultimg {
-    height: calc(100vh - 50px) !important;
+    height: 600px !important;
 }
 }
 
